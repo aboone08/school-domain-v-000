@@ -13,7 +13,6 @@ class School
     else
       @roster[grade] = [student_names]
     end
-    student_names.sort
   end
 
   def grade(grade)
@@ -21,7 +20,7 @@ class School
   end
 
   def sort
-
+    student_names.sort
     @roster.sort.to_h
   end
 end
