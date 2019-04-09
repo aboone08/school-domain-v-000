@@ -20,8 +20,6 @@ class School
   end
 
   def sort
-    #Hash[hash.sort]
-    @name[@roster.sort]
-    #@roster.sort.to_h
+    @roster.sort.to_h
   end
 end
