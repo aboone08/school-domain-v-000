@@ -11,7 +11,7 @@ class School
     if @roster[grade]
       @roster[grade] << student_names
     else
-      @roster[grade] = [student_names]
+      @roster[grade] = [student_names].sort
     end
   end
 
