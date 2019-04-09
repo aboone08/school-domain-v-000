@@ -9,9 +9,9 @@ class School
 
   def add_student(student_names, grade)
     if @roster[grade]
-      @roster[grade] << student_names
+      @roster[grade] << student_names.sort
     else
-      @roster[grade] = [student_names].sort
+      @roster[grade] = [student_names]
     end
   end
 
@@ -20,6 +20,6 @@ class School
   end
 
   def sort
-    @roster[grade(grade)].sort.to_h
+    @roster.sort.to_h
   end
 end
