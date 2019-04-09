@@ -20,7 +20,6 @@ class School
   end
 
   def sort
-    students = @name.sort
     @roster.sort.to_h
   end
 end
